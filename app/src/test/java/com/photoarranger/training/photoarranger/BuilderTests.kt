@@ -6,7 +6,7 @@ import org.junit.Test
 /**
  * Created by Training on 22/08/2017.
  */
-class BiterUnitTests{
+class BuilderUnitTests{
 
 
     @Test
@@ -16,7 +16,7 @@ class BiterUnitTests{
             photoList[i].calculateOrientation()
             photoList[i].calculateAspect()
         }*/
-        var answer = biter(42000, 42000, photoArray)
+        var answer = builder(42000, 42000, photoArray)
         Assert.assertEquals(answer, 1152000)
         // photoArray = arrayOf<Photos>(Photos(1000, 1000), Photos(1000, 1000), Photos(1000,1000))
         //  answer = stacker(1000, 600, photoArray, 0, 0)

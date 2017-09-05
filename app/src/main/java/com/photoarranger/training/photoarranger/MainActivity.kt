@@ -15,14 +15,14 @@ class MainActivity : AppCompatActivity() {
         val frameHeight = 4200
         val frameWidth = 4200
         val myColor = resources.getColor(R.color.Black)
-        var bitten = biter(frameWidth, frameHeight, photoArray)
-        var biting = arrayListOf<Photos>()
+        var built = builder(frameWidth, frameHeight, photoArray)
+        var building = arrayListOf<Photos>()
         var step: Button = findViewById(R.id.stepButton) as Button
         var i = 0
         step.setOnClickListener {
-            if (i < bitten.size) {
-                biting.add(bitten[i])
-                mImageView = draw(frameWidth + 10, frameHeight + 10, biting, mImageView)
+            if (i < built.size) {
+                building.add(built[i])
+                mImageView = draw(frameWidth + 10, frameHeight + 10, building, mImageView)
                 i++
             }
         }
