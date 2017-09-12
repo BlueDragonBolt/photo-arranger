@@ -8,6 +8,7 @@ import com.photoarranger.training.photoarranger.R
 
 
 fun draw( frameWidth: Int, frameHeight: Int,array: ArrayList<Photos>, imView: ImageView): ImageView {
+
     var bitmap: Bitmap = Bitmap.createBitmap(frameWidth, frameHeight, Bitmap.Config.ARGB_8888)
     var canvas: Canvas = Canvas(bitmap)
     var mImageView = imView
