@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var mImageView: ImageView = findViewById(R.id.mImageView) as ImageView
-        var photoArray: ArrayList<Photos> = arrayListOf(Photos(1200, 3600), Photos(3000, 1500), Photos(2100, 2100), Photos(900, 2100), Photos(4200, 600))
+        var photoArray: ArrayList<Photos> = arrayListOf(Photos(1200, 3600), Photos(3000, 1500), Photos(900, 2100), Photos(4200, 600), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700), Photos(700,700))
+
         val frameHeight = 4200
         val frameWidth = 4200
         val myColor = resources.getColor(R.color.Black)
@@ -21,7 +22,12 @@ class MainActivity : AppCompatActivity() {
         var i = 0
         step.setOnClickListener {
             if (i < built.size) {
-                building.add(built[i])
+                for(k in 0 until built.size) {
+                    if(built[k].orderOfPlacement-1 == i) {
+                        building.add(built[k])
+                        break
+                    }
+                }
                 mImageView = draw(frameWidth + 10, frameHeight + 10, building, mImageView)
                 i++
             }

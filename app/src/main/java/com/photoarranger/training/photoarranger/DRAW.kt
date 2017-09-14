@@ -25,7 +25,7 @@ fun draw( frameWidth: Int, frameHeight: Int,array: ArrayList<Photos>, imView: Im
         strokePaint.strokeWidth = 20f
         strokePaint.textSize = 200f
         canvas.drawText(i.width.toString()+"x"+i.height.toString(), i.upLeftPointX+20f, i.upLeftPointY+250f, strokePaint)
-        canvas.drawText("No."+i.originalOrder.toString(), i.upLeftPointX+20f, i.upLeftPointY+500f, strokePaint)
+        canvas.drawText("No."+i.orderOfPlacement.toString(), i.upLeftPointX+20f, i.upLeftPointY+500f, strokePaint)
 
         mImageView.setImageBitmap(bitmap)
     }

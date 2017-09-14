@@ -16,7 +16,7 @@ class Photos  (W : Int, H: Int) : Comparable<Photos> {
     var upLeftPointY: Int = 0
     var downRightPointX: Int = 0
     var downRightPointY: Int = 0
-    var originalOrder = 0
+    var orderOfPlacement = 0
     init{
         calculateAspect()
         calculateOrientation()

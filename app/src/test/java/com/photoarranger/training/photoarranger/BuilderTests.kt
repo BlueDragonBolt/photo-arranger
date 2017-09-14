@@ -11,7 +11,7 @@ class BuilderUnitTests{
 
     @Test
     fun GenericTests(){
-        var photoArray: ArrayList<Photos> = arrayListOf( Photos(12000, 36000), Photos(30000, 15000), Photos(21000, 21000), Photos(9000, 21000),Photos(42000,6000))
+        var photoArray: ArrayList<Photos> = arrayListOf(Photos(12000, 36000), Photos(30000, 15000), Photos(9000, 21000), Photos(42000, 6000), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234), Photos(234,234))
         /*for(i in 0..1) {
             photoList[i].calculateOrientation()
             photoList[i].calculateAspect()
